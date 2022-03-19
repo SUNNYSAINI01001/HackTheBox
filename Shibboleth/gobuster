@@ -1,0 +1,17 @@
+=============================================================== 
+Gobuster v3.1.0 
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart) 
+=============================================================== 
+[+] Url:                     http://shibboleth.htb/ 
+[+] Method:                  GET 
+[+] Threads:                 10 
+[+] Wordlist:                /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt 
+[+] Negative Status codes:   404 
+[+] User Agent:              gobuster/3.1.0 
+[+] Timeout:                 10s 
+=============================================================== 
+2022/03/18 09:08:01 Starting gobuster in directory enumeration mode 
+=============================================================== 
+/assets               (Status: 301) [Size: 317] [--> http://shibboleth.htb/assets/] 
+/forms                (Status: 301) [Size: 316] [--> http://shibboleth.htb/forms/] 
+ 

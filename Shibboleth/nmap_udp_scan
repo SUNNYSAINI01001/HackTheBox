@@ -1,0 +1,8 @@
+PORT      STATE         SERVICE       VERSION 
+623/udp   open          asf-rmcp 
+5001/udp  open|filtered commplex-link 
+6347/udp  open|filtered gnutella2 
+18228/udp open|filtered unknown 
+19792/udp open|filtered unknown 
+20120/udp open|filtered unknown 
+49192/udp open|filtered unknown

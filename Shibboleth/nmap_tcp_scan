@@ -1,0 +1,157 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-03-17 11:02 IST 
+NSE: Loaded 149 scripts for scanning. 
+NSE: Script Pre-scanning. 
+Initiating NSE at 11:02 
+Completed NSE at 11:02, 10.00s elapsed 
+Initiating NSE at 11:02 
+Completed NSE at 11:02, 0.00s elapsed 
+Initiating Ping Scan at 11:02 
+Scanning 10.10.11.124 [4 ports] 
+Completed Ping Scan at 11:02, 0.36s elapsed (1 total hosts) 
+Initiating Parallel DNS resolution of 1 host. at 11:02 
+Completed Parallel DNS resolution of 1 host. at 11:02, 5.52s elapsed 
+Initiating SYN Stealth Scan at 11:02 
+Scanning 10.10.11.124 [65535 ports] 
+Discovered open port 80/tcp on 10.10.11.124 
+SYN Stealth Scan Timing: About 11.77% done; ETC: 11:07 (0:03:52 remaining) 
+SYN Stealth Scan Timing: About 27.41% done; ETC: 11:06 (0:02:42 remaining) 
+SYN Stealth Scan Timing: About 30.97% done; ETC: 11:07 (0:03:23 remaining) 
+SYN Stealth Scan Timing: About 34.71% done; ETC: 11:08 (0:03:48 remaining) 
+SYN Stealth Scan Timing: About 38.93% done; ETC: 11:09 (0:04:06 remaining) 
+SYN Stealth Scan Timing: About 40.97% done; ETC: 11:10 (0:04:29 remaining) 
+SYN Stealth Scan Timing: About 54.51% done; ETC: 11:11 (0:04:04 remaining) 
+SYN Stealth Scan Timing: About 60.72% done; ETC: 11:11 (0:03:36 remaining) 
+SYN Stealth Scan Timing: About 66.22% done; ETC: 11:12 (0:03:07 remaining) 
+SYN Stealth Scan Timing: About 72.61% done; ETC: 11:12 (0:02:38 remaining) 
+SYN Stealth Scan Timing: About 78.73% done; ETC: 11:12 (0:02:06 remaining) 
+SYN Stealth Scan Timing: About 83.99% done; ETC: 11:12 (0:01:36 remaining) 
+SYN Stealth Scan Timing: About 89.45% done; ETC: 11:12 (0:01:05 remaining) 
+SYN Stealth Scan Timing: About 94.60% done; ETC: 11:13 (0:00:34 remaining) 
+Completed SYN Stealth Scan at 11:13, 627.34s elapsed (65535 total ports) 
+Initiating Service scan at 11:13 
+Scanning 1 service on 10.10.11.124 
+Completed Service scan at 11:13, 6.67s elapsed (1 service on 1 host) 
+Initiating OS detection (try #1) against 10.10.11.124 
+Retrying OS detection (try #2) against 10.10.11.124 
+Retrying OS detection (try #3) against 10.10.11.124 
+Retrying OS detection (try #4) against 10.10.11.124 
+Retrying OS detection (try #5) against 10.10.11.124 
+Initiating Traceroute at 11:13 
+Completed Traceroute at 11:13, 0.34s elapsed 
+Initiating Parallel DNS resolution of 2 hosts. at 11:13 
+Completed Parallel DNS resolution of 2 hosts. at 11:13, 5.52s elapsed 
+NSE: Script scanning 10.10.11.124. 
+Initiating NSE at 11:13 
+Completed NSE at 11:14, 55.27s elapsed 
+Initiating NSE at 11:14 
+Completed NSE at 11:14, 1.34s elapsed 
+Nmap scan report for 10.10.11.124 
+Host is up (0.34s latency). 
+Not shown: 65534 closed tcp ports (reset) 
+PORT   STATE SERVICE VERSION 
+80/tcp open  http    Apache httpd 2.4.41 
+|_http-server-header: Apache/2.4.41 (Ubuntu) 
+| vulners:  
+|   cpe:/a:apache:http_server:2.4.41:  
+|       MSF:ILITIES/UBUNTU-CVE-2020-11984/      7.5     https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2020-11984/    *
+EXPLOIT* 
+|       MSF:ILITIES/REDHAT_LINUX-CVE-2020-11984/        7.5     https://vulners.com/metasploit/MSF:ILITIES/REDHAT_LINUX-CVE-20
+20-11984/       *EXPLOIT* 
+|       MSF:ILITIES/ORACLE_LINUX-CVE-2020-11984/        7.5     https://vulners.com/metasploit/MSF:ILITIES/ORACLE_LINUX-CVE-20
+20-11984/       *EXPLOIT* 
+|       MSF:ILITIES/HUAWEI-EULEROS-2_0_SP8-CVE-2020-11984/      7.5     https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULE
+ROS-2_0_SP8-CVE-2020-11984/     *EXPLOIT* 
+|       MSF:ILITIES/FREEBSD-CVE-2020-11984/     7.5     https://vulners.com/metasploit/MSF:ILITIES/FREEBSD-CVE-2020-11984/   *
+EXPLOIT* 
+|       MSF:ILITIES/APACHE-HTTPD-CVE-2020-11984/        7.5     https://vulners.com/metasploit/MSF:ILITIES/APACHE-HTTPD-CVE-20
+20-11984/       *EXPLOIT* 
+|       CVE-2021-44790  7.5     https://vulners.com/cve/CVE-2021-44790 
+|       CVE-2021-39275  7.5     https://vulners.com/cve/CVE-2021-39275 
+|       CVE-2021-26691  7.5     https://vulners.com/cve/CVE-2021-26691 
+|       CVE-2020-11984  7.5     https://vulners.com/cve/CVE-2020-11984 
+|       1337DAY-ID-34882        7.5     https://vulners.com/zdt/1337DAY-ID-34882        *EXPLOIT* 
+|       FDF3DFA1-ED74-5EE2-BF5C-BA752CA34AE8    6.8     https://vulners.com/githubexploit/FDF3DFA1-ED74-5EE2-BF5C-BA752CA34AE8
+*EXPLOIT* 
+|       CVE-2021-40438  6.8     https://vulners.com/cve/CVE-2021-40438 
+|       CVE-2020-35452  6.8     https://vulners.com/cve/CVE-2020-35452 
+|       4810E2D9-AC5F-5B08-BFB3-DDAFA2F63332    6.8     https://vulners.com/githubexploit/4810E2D9-AC5F-5B08-BFB3-DDAFA2F63332
+*EXPLOIT* 
+|       CVE-2021-44224  6.4     https://vulners.com/cve/CVE-2021-44224 
+|       CVE-2020-1927   5.8     https://vulners.com/cve/CVE-2020-1927 
+|       MSF:ILITIES/REDHAT_LINUX-CVE-2020-9490/ 5.0     https://vulners.com/metasploit/MSF:ILITIES/REDHAT_LINUX-CVE-2020-9490/
+*EXPLOIT* 
+|       MSF:ILITIES/ORACLE_LINUX-CVE-2020-9490/ 5.0     https://vulners.com/metasploit/MSF:ILITIES/ORACLE_LINUX-CVE-2020-9490/
+*EXPLOIT* 
+|       MSF:ILITIES/ORACLE-SOLARIS-CVE-2020-1934/       5.0     https://vulners.com/metasploit/MSF:ILITIES/ORACLE-SOLARIS-CVE-
+2020-1934/      *EXPLOIT* 
+|       MSF:ILITIES/HUAWEI-EULEROS-2_0_SP9-CVE-2020-9490/       5.0     https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULE
+ROS-2_0_SP9-CVE-2020-9490/      *EXPLOIT* 
+|       MSF:ILITIES/HUAWEI-EULEROS-2_0_SP8-CVE-2020-9490/       5.0     https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULE
+ROS-2_0_SP8-CVE-2020-9490/      *EXPLOIT* 
+|       MSF:ILITIES/FREEBSD-CVE-2020-9490/      5.0     https://vulners.com/metasploit/MSF:ILITIES/FREEBSD-CVE-2020-9490/    *
+EXPLOIT* 
+|       MSF:ILITIES/CENTOS_LINUX-CVE-2020-9490/ 5.0     https://vulners.com/metasploit/MSF:ILITIES/CENTOS_LINUX-CVE-2020-9490/
+*EXPLOIT* 
+|       MSF:ILITIES/APACHE-HTTPD-CVE-2020-9490/ 5.0     https://vulners.com/metasploit/MSF:ILITIES/APACHE-HTTPD-CVE-2020-9490/
+*EXPLOIT* 
+|       MSF:ILITIES/AMAZON-LINUX-AMI-2-CVE-2020-9490/   5.0     https://vulners.com/metasploit/MSF:ILITIES/AMAZON-LINUX-AMI-2-
+CVE-2020-9490/  *EXPLOIT* 
+|       CVE-2021-36160  5.0     https://vulners.com/cve/CVE-2021-36160 
+|       CVE-2021-34798  5.0     https://vulners.com/cve/CVE-2021-34798 
+|       CVE-2021-33193  5.0     https://vulners.com/cve/CVE-2021-33193 
+|       CVE-2021-30641  5.0     https://vulners.com/cve/CVE-2021-30641 
+|       CVE-2021-26690  5.0     https://vulners.com/cve/CVE-2021-26690 
+|       CVE-2020-9490   5.0     https://vulners.com/cve/CVE-2020-9490 
+|       CVE-2020-1934   5.0     https://vulners.com/cve/CVE-2020-1934 
+|       CVE-2020-13950  5.0     https://vulners.com/cve/CVE-2020-13950 
+|       CVE-2019-17567  5.0     https://vulners.com/cve/CVE-2019-17567 
+|       MSF:ILITIES/REDHAT_LINUX-CVE-2020-11993/        4.3     https://vulners.com/metasploit/MSF:ILITIES/REDHAT_LINUX-CVE-20
+20-11993/       *EXPLOIT* 
+|       MSF:ILITIES/HUAWEI-EULEROS-2_0_SP8-CVE-2020-11993/      4.3     https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULE
+ROS-2_0_SP8-CVE-2020-11993/     *EXPLOIT* 
+|       MSF:ILITIES/CENTOS_LINUX-CVE-2020-11993/        4.3     https://vulners.com/metasploit/MSF:ILITIES/CENTOS_LINUX-CVE-20
+20-11993/       *EXPLOIT* 
+|       MSF:ILITIES/APACHE-HTTPD-CVE-2020-11993/        4.3     https://vulners.com/metasploit/MSF:ILITIES/APACHE-HTTPD-CVE-20
+20-11993/       *EXPLOIT* 
+|       MSF:ILITIES/AMAZON-LINUX-AMI-2-CVE-2020-11993/  4.3     https://vulners.com/metasploit/MSF:ILITIES/AMAZON-LINUX-AMI-2-
+CVE-2020-11993/ *EXPLOIT* 
+|       CVE-2020-11993  4.3     https://vulners.com/cve/CVE-2020-11993 
+|_      1337DAY-ID-35422        4.3     https://vulners.com/zdt/1337DAY-ID-35422        *EXPLOIT* 
+|_http-dombased-xss: Couldn't find any DOM based XSS. 
+|_http-csrf: Couldn't find any CSRF vulnerabilities. 
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities. 
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ). 
+TCP/IP fingerprint: 
+OS:SCAN(V=7.92%E=4%D=3/17%OT=80%CT=1%CU=36547%PV=Y%DS=2%DC=T%G=Y%TM=6232CAC 
+OS:4%P=x86_64-pc-linux-gnu)SEQ(SP=104%GCD=1%ISR=10B%TI=Z%CI=Z%II=I%TS=A)OPS 
+OS:(O1=M505ST11NW7%O2=M505ST11NW7%O3=M505NNT11NW7%O4=M505ST11NW7%O5=M505ST1 
+OS:1NW7%O6=M505ST11)WIN(W1=FE88%W2=FE88%W3=FE88%W4=FE88%W5=FE88%W6=FE88)ECN 
+OS:(R=Y%DF=Y%T=40%W=FAF0%O=M505NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=A 
+OS:S%RD=0%Q=)T2(R=Y%DF=Y%T=40%W=0%S=Z%A=S%F=AR%O=%RD=0%Q=)T3(R=Y%DF=Y%T=40% 
+OS:W=0%S=Z%A=O%F=AR%O=%RD=0%Q=)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=) 
+OS:T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A 
+OS:=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%D 
+OS:F=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=4 
+OS:0%CD=S) 
+ 
+Uptime guess: 48.971 days (since Thu Jan 27 11:56:29 2022) 
+Network Distance: 2 hops 
+TCP Sequence Prediction: Difficulty=260 (Good luck!) 
+IP ID Sequence Generation: All zeros 
+Service Info: Host: shibboleth.htb 
+ 
+TRACEROUTE (using port 995/tcp) 
+HOP RTT       ADDRESS 
+1   336.11 ms 10.10.14.1 
+2   336.05 ms 10.10.11.124 
+ 
+NSE: Script Post-scanning. 
+Initiating NSE at 11:14 
+Completed NSE at 11:14, 0.00s elapsed 
+Initiating NSE at 11:14 
+Completed NSE at 11:14, 0.00s elapsed 
+Read data files from: /usr/bin/../share/nmap 
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ . 
+Nmap done: 1 IP address (1 host up) scanned in 726.94 seconds 
+           Raw packets sent: 66134 (2.913MB) | Rcvd: 66094 (2.648MB)
+ 
