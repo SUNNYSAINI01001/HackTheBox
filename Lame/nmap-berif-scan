@@ -1,0 +1,40 @@
+# Nmap 7.92 scan initiated Sat Apr  2 09:45:50 2022 as: nmap -A -O -v -Pn -p 3632 --script vuln -oN nmap-berif-scan 10.10.10.3
+Nmap scan report for 10.10.10.3
+Host is up (0.39s latency).
+
+PORT     STATE SERVICE VERSION
+3632/tcp open  distccd distccd v1 ((GNU) 4.2.4 (Ubuntu 4.2.4-1ubuntu4))
+| distcc-cve2004-2687: 
+|   VULNERABLE:
+|   distcc Daemon Command Execution
+|     State: VULNERABLE (Exploitable)
+|     IDs:  CVE:CVE-2004-2687
+|     Risk factor: High  CVSSv2: 9.3 (HIGH) (AV:N/AC:M/Au:N/C:C/I:C/A:C)
+|       Allows executing of arbitrary commands on systems running distccd 3.1 and
+|       earlier. The vulnerability is the consequence of weak service configuration.
+|       
+|     Disclosure date: 2002-02-01
+|     Extra information:
+|       
+|     uid=1(daemon) gid=1(daemon) groups=1(daemon)
+|   
+|     References:
+|       https://nvd.nist.gov/vuln/detail/CVE-2004-2687
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-2687
+|_      https://distcc.github.io/security.html
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: DD-WRT v24-sp1 (Linux 2.4.36) (92%), OpenWrt White Russian 0.9 (Linux 2.4.30) (92%), Linux 2.6.23 (92%), Belkin N300 WAP (Linux 2.6.30) (92%), Control4 HC-300 home controller (92%), D-Link DAP-1522 WAP, or Xerox WorkCentre Pro 245 or 6556 printer (92%), Dell Integrated Remote Access Controller (iDRAC5) (92%), Dell Integrated Remote Access Controller (iDRAC6) (92%), Linksys WET54GS5 WAP, Tranzeo TR-CPQ-19f WAP, or Xerox WorkCentre Pro 265 printer (92%), Linux 2.4.21 - 2.4.31 (likely embedded) (92%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 0.013 days (since Sat Apr  2 09:27:21 2022)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=199 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE (using port 3632/tcp)
+HOP RTT       ADDRESS
+1   396.39 ms 10.10.14.1
+2   395.47 ms 10.10.10.3
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Apr  2 09:46:35 2022 -- 1 IP address (1 host up) scanned in 45.12 seconds
