@@ -1,0 +1,20 @@
+# Nmap 7.92 scan initiated Mon Apr  4 11:15:54 2022 as: nmap -F -sV -oN nmap-fast-scan 10.10.10.7
+Nmap scan report for 10.10.10.7
+Host is up (0.19s latency).
+Not shown: 89 closed tcp ports (reset)
+PORT      STATE SERVICE    VERSION
+22/tcp    open  ssh        OpenSSH 4.3 (protocol 2.0)
+25/tcp    open  smtp       Postfix smtpd
+80/tcp    open  http       Apache httpd 2.2.3
+110/tcp   open  pop3       Cyrus pop3d 2.3.7-Invoca-RPM-2.3.7-7.el5_6.4
+111/tcp   open  rpcbind    2 (RPC #100000)
+143/tcp   open  imap       Cyrus imapd 2.3.7-Invoca-RPM-2.3.7-7.el5_6.4
+443/tcp   open  ssl/https?
+993/tcp   open  ssl/imap   Cyrus imapd
+995/tcp   open  pop3       Cyrus pop3d
+3306/tcp  open  mysql      MySQL (unauthorized)
+10000/tcp open  http       MiniServ 1.570 (Webmin httpd)
+Service Info: Hosts:  beep.localdomain, 127.0.0.1, example.com
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Apr  4 11:16:43 2022 -- 1 IP address (1 host up) scanned in 49.19 seconds
