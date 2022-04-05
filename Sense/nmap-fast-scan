@@ -1,0 +1,10 @@
+# Nmap 7.92 scan initiated Mon Apr  4 15:03:56 2022 as: nmap -F -sV -oN nmap-fast-scan 10.10.10.60
+Nmap scan report for 10.10.10.60
+Host is up (0.15s latency).
+Not shown: 98 filtered tcp ports (no-response)
+PORT    STATE SERVICE    VERSION
+80/tcp  open  http       lighttpd 1.4.35
+443/tcp open  ssl/https?
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Apr  4 15:04:15 2022 -- 1 IP address (1 host up) scanned in 19.33 seconds

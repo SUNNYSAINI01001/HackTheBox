@@ -1,0 +1,34 @@
+DirBuster 1.0-RC1 - Report
+http://www.owasp.org/index.php/Category:OWASP_DirBuster_Project
+Report produced on Mon Apr 04 18:05:35 IST 2022
+--------------------------------
+
+https://10.10.10.60:443
+--------------------------------
+Directories found during testing:
+
+Dirs found with a 200 response:
+
+/
+/tree/
+
+Dirs found with a 302 response:
+
+/installer/
+
+
+--------------------------------
+Files found during testing:
+
+Files found with a 200 responce:
+
+/changelog.txt
+/index.php
+/themes/pfsense_ng/javascript/niftyjsCode.js
+/csrf/csrf-magic.js
+/javascript/jquery.js
+/tree/tree.js
+/system-users.txt
+
+
+--------------------------------
