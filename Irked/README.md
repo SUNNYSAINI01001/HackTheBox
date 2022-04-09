@@ -670,4 +670,4 @@ chmod +x listusers
 
 # BOOOMMM!! WE GOT ROOT SHELL.
 
-![FUNNY](https://i.gifer.com/bQc.gif)
+![end](https://i0.wp.com/chicagostylesports.com/wp-content/uploads/2016/02/Stephen-colbert-celebration-gif.gif?ssl=1)
